@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px
+    ;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://img2.pic.in.th/pic/-179b452ad52d4ac96.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg .text{
+  display: flex;
+  flex-direction: column;
+ color: white;
+ margin: 5rem 5rem;
+ text-shadow: #3399ff 1px 0 10px;
+} 
+.full{
+    display: none;
+    width: auto;
+    width: max-content;
+
+}
+@media only screen and (min-width: 650px){
+
+    .ham{
+        display: none;
+    }
+    .bar1, .bar2, .bar3 {
+        display: none;
+    }
+}  
+    
+@media only screen and (max-width: 650px)  {
+    /*navbar*/
+    .nav-con ul{
+        display: none; 
+    }
+    .nav-con{
+        padding-right: 1rem;
+        height: auto;
+        width: auto;
+    }
+    .menu-active{
+        background-color:#99ccff;
+
+        margin-top: 6rem;
+        padding:10px;       
+    }
+    .menu li a{
+        display: flex;
+        margin-left: -5rem;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+    }
+    .menu li a p{
+        margin-left: 1rem;
+    }
+    .menu{
+        padding-top: 50px;
+       
+    }
+    .menu-active{
+        display: block !important;
+       
+      }
+ 
+    /*navbar*/
+    .bg{
+        display: flex;
+        flex-direction: column;
+       
+    }  
+    .bg .text h1{
+        font-size: 4rem;
+        text-align: center;  
+    }
+    .bg .text p{
+        text-align: center;
+    }
+}    
+@media only screen and (max-width: 500px){
+    .bg{
+        display: flex;
+        flex-direction: column;
+        
+    }  
+    .bg .text h1{
+        font-size: 3rem;
+        text-align: center;  
+    }
+    .bg .text p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .bg{
+        display: flex;
+        flex-direction: column;
+        
+    }  
+    .bg .text h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }  
+    .bg .text p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 1300px){
+       .bg{
+        margin: 7rem 8rem;
+       }
+    } 
+
+/*banertext*/
+.text h1{
+    font-size: 5rem;
+}
+.text p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+/*banertext*/
+/*NAVBAR*/
+nav{
+    height: 60px;
+    width: auto;
+    background-color: #3399ff;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    position: relative;
+    width: auto;
+    height: 60px;
+    background-color: #3399ff;
+   
+}
+.nav-con a{
+    text-decoration: none;
+    text-align: center;
+    font-size:1rem;
+    color: white;
+    
+}   
+.menu{
+    display: flex;
+    margin-right: 1rem;
+}
+.menu li{
+    margin-left: 5rem; 
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    text-align: center;
+    
+}
+.nav-con a:hover{
+    text-shadow: 0px 0px 30px white;
+    
+}
+.home {
+   margin-left: 1rem;
+}
+/*NAVBAR*/
+/*hamberger*/
+.ham {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    width: 20px;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    width: 20px;
+  }
+  /*hamberger*/
+
+  
